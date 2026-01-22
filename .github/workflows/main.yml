@@ -19,8 +19,8 @@ jobs:
         java-version: 21
         distribution: temurin
         cache: maven
-    - name: Maven Build
-      run: mvn -B -DskipTests package
+    #- name: Maven Build
+    #  run: mvn -B -DskipTests package
     - name: Black Duck SCA Scan
       uses: blackduck-inc/black-duck-security-scan@v2
       env:
